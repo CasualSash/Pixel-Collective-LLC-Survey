@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Collective LLC Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Pixel Collective LLC Survey</h1>
+    <p id="description" class="text2">We really appreciate your feedback</p> 
+    <form id="survey-form" action="/submit_survey" method="post">
+        <label id="name-label" for="name">First Name:</label>
+        <input type="text" id="name" name="first-name" placeholder= "First Name" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder= "Last Name"required>
+        <label for="company-name"> Company Name:</label>
+        <input type="text" id="company-name" name="company-name" placeholder= "Company Name" required>
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder= "Email"required>
+        <label id="number-label" for="number">Phone Number:</label>
+        <input type="text" id="number" name="number" placeholder= "Phone Number"required>
+        <label for="dropdown">Did we meet your expectations?:</label>
+        <select  id="dropdown" name="expectations" required>
+            <option value="">Select</option>
+            <option value="yes">Meet our Expectations</option>
+            <option value="no">Did not meet our Expectations</option>
+            <option value="other">Below our Expectations</option>
+            <option value="other2">Above our Expectations</option>
+        </select>
+        <label for="quality">How satisfied are you with the quality of our services?:</label>
+            <input class="inline" type="checkbox" id="quality1" value="yes">Satisfied</input>
+            <input class="inline" type="checkbox" id="quality2" value="no">Not Satisfied</input>
+        </select>
+        <label for="feedback1">1. What specific aspects of our services did you find most valuable?</label>
+        <textarea class="response" id="feedback1" name="feedback1" rows="5"></textarea>
+        <label for="feedback2">2. Were there any challenges or areas where you felt our services could have been better?</label>
+        <textarea class="response" id="feedback2" name="feedback2" rows="5"></textarea>
+        <label for="feedback3">3. Would you recommend our services to others? If so, why or why not?</label>
+        <textarea class="response" id="feedback3" name="feedback3" rows="5"></textarea>
+        <label>Rate our services:</label>
+            <input type="radio" value="1" id="radio1" name="radiogroup">
+            <label class="radio-inline" for="radio1">1 Star</label>
+            <input type="radio" value="2"  id="radio2" name="radiogroup">
+            <label class="radio-inline" for="radio2">2 Star</label>
+            <input type="radio" value="3" id="radio3" name="radiogroup">
+            <label class="radio-inline" for="radio3">3 Star</label>
+            <input type="radio" value="4"  id="radio4" name="radiogroup">
+            <label class="radio-inline" for="radio4">4 Star</label>
+            <input type="radio" value="5" id="radio5" name="radiogroup">
+            <label class="radio-inline" for="radio5">5 Star</label>
+            <div> 
+        <button type="submit" id="submit" value="Submit">Submit</button>
+            </div>
+    </form>
+    <script scr="styles.js"></script>
+            <footer>
+            &copy;2024 Pixel Collective LLC
+            </footer>
+</body>
+</html>
